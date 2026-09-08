@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ben_dev — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,700;9..144,900&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="CSS/responsives.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">Ben_dev</a>
+    <nav class="desktop-nav" aria-label="Navigation principale">
+      <a href="#projets">Projets</a><a href="#parcours">Parcours</a><a href="#competences">Compétences</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="contact-link" href="mailto:benimoise@example.com">Me contacter</a>
+    <button class="menu-button" aria-label="Menu" aria-controls="mobile-navigation" aria-expanded="false"><i></i><i></i><i></i></button>
+  </header>
+  <nav id="mobile-navigation" class="mobile-nav" aria-label="Navigation mobile" aria-hidden="true">
+    <a href="#projets">Projets</a><a href="#parcours">Parcours</a><a href="#competences">Compétences</a><a href="#contact">Contact</a>
+    <a class="mobile-contact" href="mailto:benimoise@example.com">Me contacter →</a>
+  </nav>
+
+  <main id="top">
+    <section class="hero container reveal">
+      <div class="hero-copy">
+        <p class="eyebrow hero-item">Dev Fullstack &amp; Gaming</p>
+        <h1 class="hero-item">Expériences<br><em>élégantes</em><br>&amp; immersives.</h1>
+        <p class="intro hero-item">Beni Moise — étudiant en informatique à l'UPC. Je conçois des interfaces pensées pour l'utilisateur, avec une sensibilité particulière pour le gaming et l'UI design.</p>
+        <div class="actions hero-item"><a class="button accent" href="https://github.com/benimoiseD" target="_blank" rel="noopener">GitHub <span>↗</span></a><a class="button outline" href="https://discord.gg/ErHGQV7ZS" target="_blank" rel="noopener">Discord</a></div>
+      </div>
+      <div class="portrait-wrap hero-item">
+        <div class="portrait"><img src="ASSETS/images/portrait.jpeg" alt="Beni Moise — Ben_dev"><div class="portrait-label"><b>Beni Moise</b><span>Kinshasa, UPC — 2026</span></div></div>
+      </div>
+    </section>
+    <div class="container divider"></div>
+
+    <section id="projets" class="container projects reveal">
+      <div class="section-heading"><h2>Projets</h2><div class="filters" role="group" aria-label="Filtrer les projets"><button class="active" data-filter="Tous">Tous</button><button data-filter="UI/UX">UI/UX</button><button data-filter="Gaming">Gaming</button><button data-filter="Web">Web</button><button data-filter="Mobile">Mobile</button></div></div>
+      <div class="project-grid">
+        <article class="project-card" data-category="UI/UX"><div class="project-image"><img loading="lazy" src="https://images.unsplash.com/photo-1695048064952-44b984f2af6d?w=800&amp;h=600&amp;fit=crop&amp;auto=format" alt="Portfolio Gamifié"></div><div class="project-content"><div class="project-meta"><span>UI/UX</span><time>2025</time></div><h3>Portfolio Gamifié</h3><b>Designer &amp; Intégrateur</b><p>Prototype interactif avec système de progression et badges pour portfolios personnels.</p><div class="project-bottom"><div class="tags"><span>Figma</span><span>HTML</span><span>CSS</span><span>JS</span></div><a href="https://github.com/benimoiseD/portfolio-gamified" target="_blank" rel="noopener">GitHub →</a></div></div></article>
+        <article class="project-card" data-category="Gaming"><div class="project-image"><img loading="lazy" src="https://images.unsplash.com/photo-1784407097298-759eb54e8aeb?w=800&amp;h=600&amp;fit=crop&amp;auto=format" alt="Mini-jeu Éducatif"></div><div class="project-content"><div class="project-meta"><span>Gaming</span><time>2025</time></div><h3>Mini-jeu Éducatif</h3><b>Développeur gameplay</b><p>Serious game pour l'apprentissage de l'algorithmique de façon ludique et interactive.</p><div class="project-bottom"><div class="tags"><span>Unity</span><span>C#</span></div><a href="https://github.com/benimoiseD/mini-jeu" target="_blank" rel="noopener">GitHub →</a></div></div></article>
+        <article class="project-card" data-category="Web"><div class="project-image"><img loading="lazy" src="https://images.unsplash.com/photo-1735948055457-8d816fb80a87?w=800&amp;h=600&amp;fit=crop&amp;auto=format" alt="Gestion Financière"></div><div class="project-content"><div class="project-meta"><span>Web</span><time>2025</time></div><h3>Gestion Financière</h3><b>Développeur Fullstack</b><p>Site interactif de gestion budgétaire et suivi des dépenses — projet de Licence L1 réussi avec distinction.</p><div class="project-bottom"><div class="tags"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div><a href="https://github.com/benimoiseD/gestion-financiere" target="_blank" rel="noopener">GitHub →</a></div></div></article>
+        <article class="project-card" data-category="Mobile"><div class="project-image"><img loading="lazy" src="https://images.unsplash.com/photo-1783195016858-759eb54e8aeb?w=800&amp;h=600&amp;fit=crop&amp;auto=format" alt="App Santé Mobile"></div><div class="project-content"><div class="project-meta"><span>Mobile</span><time>2026</time></div><h3>App Santé Mobile</h3><b>Développeur mobile</b><p>Application mobile de suivi des habitudes et rappels santé quotidiens.</p><div class="project-bottom"><div class="tags"><span>Flutter</span><span>Firebase</span></div><a href="https://github.com/benimoiseD/app-sante" target="_blank" rel="noopener">GitHub →</a></div></div></article>
+      </div>
+    </section>
+
+    <section id="parcours" class="surface section"><div class="container reveal"><p class="eyebrow">Formation</p><h2>Parcours académique</h2><ol class="timeline"><li><time>2024</time><h3>Baccalauréat Scientifique</h3><p>Lycée Madame de Sévigné (LMS)</p><i>Mention Bien — résultat de 71%</i></li><li><time>2025</time><h3>Licence Informatique L1</h3><p>Université Protestante du Congo (UPC)</p><i>Réussite avec distinction — projet site de gestion financière</i></li><li><time>2026</time><h3>Licence Informatique L2</h3><p>Université Protestante du Congo (UPC)</p><i>En cours</i></li></ol></div></section>
+
+    <section id="competences" class="container skills section"><div class="skills-column reveal"><p class="eyebrow">Hard Skills</p><h2>Compétences<br><em>techniques</em></h2><ul class="hard-skills"><li>HTML / CSS</li><li>JavaScript</li><li>React / Next.js</li><li>Figma / UI Design</li><li>Flutter / Mobile</li></ul></div><div class="skills-column reveal"><p class="eyebrow">Soft Skills</p><h2>Qualités<br><em>humaines</em></h2><div class="soft-skills"><span>Communication</span><span>Gestion de projet</span><span>Esprit d'équipe</span><span>Créativité</span><span>Résolution de problèmes</span></div><aside><p class="eyebrow">Communauté</p><ul><li>— Module UI accessible React (open source)</li><li>— Guide accessibilité web &amp; tuto React/Flutter</li><li>— Conférences UX design d'interfaces sombres</li><li>— Communauté Discord active</li></ul></aside></div></section>
+
+    <section id="contact" class="surface section contact-section reveal"><div class="container contact-layout"><div><p class="eyebrow">Disponible — stage &amp; collaboration</p><h2>Travaillons<br>ensemble.</h2></div><div class="contact-actions"><a class="button accent email" href="mailto:benimoise@example.com">benimoise@example.com <span>↗</span></a><div><a href="https://github.com/benimoiseD" target="_blank" rel="noopener">GitHub</a><a href="https://discord.gg/ErHGQV7ZS" target="_blank" rel="noopener">Discord</a><a href="#">LinkedIn</a></div></div></div></section>
+  </main>
+  <footer><span>Beni Moise — UPC, Kinshasa</span><span>Ben_dev © 2026</span></footer>
+  <script src="JS/scripts.js"></script>
+</body>
+</html>
